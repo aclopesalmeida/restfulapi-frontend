@@ -1,0 +1,12 @@
+<div class="formulario-criar">
+        <h2>Novo aluno</h2>
+        <form method="POST" ng-submit="criar();">
+            <div class="form-group">
+                    <label for="nome">Nome do Aluno:</label>
+                    <input type="text" name="nome" ng-model="aluno.nome" class="form-control">
+            </div>
+            
+            <button class="btn btn-success">Criar</button>
+            <a href="#/admin/classificacoes/criar" class="btn btn-default">Regressar</a>
+        </form>
+    </div>

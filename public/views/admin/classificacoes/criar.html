@@ -1,0 +1,23 @@
+<div class="formulario-criar">
+    <h2>Nova classificação</h2>
+    <form method="POST" ng-submit="criar();">
+        <div class="form-group">
+                <label for="aluno_id">Nome do aluno:</label>
+                <select name="aluno_id" ng-options="aluno.id as aluno.nome for aluno in alunos" ng-model="classificacao.aluno_id"></select>
+                <a href="#/admin/alunos/criar" class="font-aws"><i class="fas fa-plus-square"></i></a>
+        </div>
+
+        <div class="form-group">
+            <label for="disciplina_id">Disciplina:</label>
+            <select name="disciplina_id" ng-model="classificacao.disciplina_id" ng-options="disciplina.id as disciplina.nome for disciplina in disciplinas"></option>
+            </select>
+        </div>
+     
+        <div class="form-group">
+            <label for="nota">Nota</label>
+            <input type="text" name="nota" ng-model="classificacao.nota" class="form-control">
+        </div>
+
+        <button class="btn btn-success">Criar</button>
+    </form>
+</div>

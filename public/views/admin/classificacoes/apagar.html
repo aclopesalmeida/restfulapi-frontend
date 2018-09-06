@@ -1,0 +1,25 @@
+<div id="formulario-apagar">
+        <h2>Apagar classificação</h2>
+        <h5>Tem a certeza que deseja apagar a seguinte classificação?</h5>
+        <form method="POST" ng-submit="apagar();">
+            <div class="form-group">
+                    <label>Nome do aluno:</label>
+                    <p>{{classificacao.aluno.nome}}</p>
+            </div>
+    
+            <div class="form-group">
+                    <label>Disciplina:</label>
+                <p>{{classificacao.disciplina.nome}}</p>
+            </div>
+         
+            <div class="form-group">
+                <label>Nota</label>
+                <p name="nota" class="form-control">{{classificacao.nota}}</p>
+            </div>
+
+            <input type="hidden" name="disciplina_id" ng-model="classificacao.disciplina_id"> 
+            <input type="hidden" name="aluno_id" ng-model="classificacao.aluno_id">
+    
+            <button class="btn btn-success">Apagar</button>
+        </form>
+    </div>

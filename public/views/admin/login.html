@@ -1,0 +1,19 @@
+<div class="col-12" id="login-container">
+
+<form method="POST" ng-submit="login();" class="col-4 offset-4">
+    <div class="form-group">
+        <input type="text" name="email" ng-model="utilizador.email" class="form-control" placeholder="Email">
+    </div>
+
+    <div class="form-group">
+            <input type="password" name="password" ng-model="utilizador.password" class="form-control" placeholder="Password">
+        </div>
+        <button class="btn btn-success">Login</button>
+
+</form>
+<div class="col-4 offset-4">
+    <p>Para fim de teste, utilize por favor as seguintes credenciais: <br>
+    email: teste@teste.com <br>
+password: teste</p>
+</div>
+</div>

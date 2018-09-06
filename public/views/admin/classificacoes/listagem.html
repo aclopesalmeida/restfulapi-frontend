@@ -1,0 +1,30 @@
+
+    <h2>Classificações 2017/2018 - {{ disciplina.nome }}</h2>
+    <table class="table table-default col-md-12 col-lg-10">
+        <thead class="table-dark">
+            <tr>
+                <th>Aluno</th>
+                <th>Nota</th>
+                <th>Opções</th>
+            </tr>
+            
+        </thead>
+        <tbody class="table-bordered">
+            <tr ng-repeat="aluno in classificacoes" class="classificacao">
+                <td>{{ aluno.nome }}</td>
+                <td>{{ aluno.classificacoes[0].nota}}</td>
+                <td class="opcoes">
+                    <a href="#/admin/classificacoes/editar/{{aluno.classificacoes[0].aluno_id}}/{{aluno.classificacoes[0].disciplina_id}}"> <i class="fas fa-arrow-alt-circle-right"></i><span>Editar</span></a>
+                    
+                    <br>
+
+                <a href="#/admin/classificacoes/apagar/{{aluno.classificacoes[0].aluno_id}}/{{aluno.classificacoes[0].disciplina_id}}"><i class="fas fa-arrow-alt-circle-right"></i> <span>Apagar</span></a>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="btn btn-default" data-ultimo="{{classificacoes.length}}" ng-click="carregarMais($event);" ng-hide="fimResultados == true || classificacoes.length == 0" >Carregar mais</div>
+
+    
+    <

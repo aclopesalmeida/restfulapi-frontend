@@ -1,0 +1,17 @@
+{
+  "name": "restapi_classificacoes_frontend",
+  "version": "1.0.0",
+  "description": "/public/js/app.ks",
+  "main": "gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Carolina",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.1.5",
+    "grunt": "^1.0.3",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-postcss": "^0.9.0"
+  }
+}

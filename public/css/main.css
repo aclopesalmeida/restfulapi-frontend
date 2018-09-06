@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 14pt;
+    font-family: 'Karla', sans-serif;
+}
+
+a, a:hover, a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-size: 230%;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 150%;
+    margin-bottom: 50px;
+}
+
+h3 {
+    font-size: 120%;
+    margin-bottom: 50px;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+.btn-default {
+    border: 1px solid lightgrey;
+    background: lightgrey;
+}
+
+
+#home header {
+    text-align:center;
+}
+#home header #titulo {
+    margin: 80px 0;
+}
+
+#home nav ul {
+    text-align: right;
+}
+#home nav li {
+    display: inline-block;
+    margin-right: 7px;
+}
+#home nav li:last-of-type { margin-right: 0;}
+
+
+
+#home main, #home aside {
+    margin: 50px auto;
+}
+
+
+#login-overlay {
+    padding: 80px 0;
+    display: none;
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100vh;
+    z-index: 50;
+    background: black;
+    opacity: 0.6;
+    text-align: center;
+}
+#login-overlay.open, #login-container.open {
+    display: block;
+}
+
+#login-container {
+    background: white;
+    width: 60%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    padding: 30px 0;
+    z-index: 110;
+    opacity: 1;
+    display: none;
+}
+#login-container > * {
+    width: 80%;
+}
+
+#login-container > a {
+    font-size: 25px;
+    color: #d3d3d3;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    width: auto;
+}
+
+#login-container form {
+    margin: 10px auto 20px auto;
+}
+#login-container p {
+    font-size: 80%;
+    margin: 0 auto;
+}
+
+#home aside li {
+    margin-bottom: 10px;
+}
+
+.classificacao a {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+.classificacao svg {   
+    font-size: 35px;
+    padding-right: 10px;
+}
+
+.formulario-criar, #formulario-editar, #apagar-formulario {
+    margin-left: 30px;
+}
+.formulario-criar label, #formulario-editar label, #formulario-apagar label {
+    margin-right: 10px;
+}
+.formulario-criar input, #formulario-editar input, #formulario-apagar p {
+    display: inline-block;
+    width: auto;
+}
+.formulario-criar .font-aws {
+    font-size: 25px;
+    color: #28a745;
+    display: inline-block;
+    margin-left: 10px;
+}
+.formulario-criar .btn {
+    margin-right: 5px;
+}
+.formulario-criar .form-group:first-of-type {
+    display: flex;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 991px) {
+    h3 {
+        margin-bottom: 20px;
+    }
+
+    #home main {
+        order:  2;
+    }
+    #home aside {
+        order: 1;
+    }
+    #home aside li {
+        display: inline-block;
+        padding: 0;
+    }
+
+    .formulario-criar, #formulario-editar, #apagar-formulario {
+        margin-left: 0;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 575px) {
+    #titulo {
+        font-size: 200%;
+    }
+
+    #home aside {
+        margin-bottom: 15px;
+    }
+
+   #home nav ul {
+       text-align: center;
+   }
+  
+}
+
